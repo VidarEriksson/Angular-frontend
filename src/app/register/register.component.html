@@ -1,0 +1,58 @@
+<div class="register-container">
+    <h1>Register </h1>
+    <p>
+        <mat-form-field appearance="fill">
+          <mat-label>Firstname</mat-label>
+          <input matInput placeholder="">
+          <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+          
+        </mat-form-field>
+      </p>
+      <p>
+        <mat-form-field appearance="fill">
+          <mat-label>Lastname</mat-label>
+          <input matInput placeholder="">
+          <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+          
+        </mat-form-field>
+      </p>
+      <p>
+        <mat-form-field appearance="fill">
+          <mat-label>Username</mat-label>
+          <input matInput placeholder="">
+          <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+          
+        </mat-form-field>
+      </p>
+      <p>
+        <mat-form-field appearance="fill">
+          <mat-label>Email</mat-label>
+          <input matInput placeholder="abc@gmail.com">
+          <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+          
+        </mat-form-field>
+      </p>
+      <p>
+        <mat-form-field appearance="fill">
+          <mat-label>City</mat-label>
+          <input matInput placeholder="GTown">
+          <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+          
+        </mat-form-field>
+      </p>
+    <mat-form-field>
+      <mat-label> Password</mat-label>
+      <input matInput [type]="hide ? 'password' : 'text'">
+      <button mat-icon-button matSuffix (click)="clickEvent($event)" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
+        <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+      </button>
+       </mat-form-field>
+       <h1></h1>
+
+      
+        <button class=" register-button">
+            Register
+           </button>
+           <p>Have an account? </p> 
+           <a routerLink="/login">Login here</a>
+
